@@ -1,0 +1,6 @@
+student1 = {"Python","Java","SQL"}
+student2 = {"Python","C++","SQL"}
+print(student1&student2)
+print(student1|student2)
+print(student1-student2)
+print(student2-student1)
