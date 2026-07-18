@@ -13,6 +13,8 @@ This repository documents my journey of learning Python through daily coding pra
 | ✅ Day 1 | Python Basics | Completed |
 | ✅ Day 2 | Control Flow & Loops | Completed |
 | ✅ Day 3 | Lists & Dictionaries | Completed |
+| ✅ Day 4 | Tuples & Sets | Completed |
+| ✅ Day 5 | Exceptions, Modules & Libraries, API & JSON, Unit Testing | Completed |
 
 ---
 
@@ -25,7 +27,14 @@ Python-Practice
 ├── ControlFlow
 ├── Loops
 ├── Lists
-└── Dictionaries
+├── Dictionaries
+├── Tuple
+├── Sets
+├── Exceptions
+├── Modules_and_Libraries
+├── _API_and_JSON
+├── Unit_Testing
+└── README.md
 ```
 
 More folders and projects will be added as I continue my learning journey.
@@ -73,6 +82,7 @@ More folders and projects will be added as I continue my learning journey.
 ---
 
 ## Lists
+
 ### Concepts
 - Creating Lists
 - Indexing
@@ -96,6 +106,7 @@ More folders and projects will be added as I continue my learning journey.
 ---
 
 ## Dictionaries
+
 ### Concepts
 - Creating Dictionaries
 - Accessing Values
@@ -113,16 +124,103 @@ More folders and projects will be added as I continue my learning journey.
 
 ---
 
+## Tuples
+- Creating Tuples
+- Indexing
+- Slicing
+- Packing & Unpacking
+- Tuple Methods
+
+---
+
+## Sets
+- Creating Sets
+- Adding Elements
+- Removing Elements
+- Set Operations
+- Union
+- Intersection
+- Difference
+- Membership Testing
+
+---
+
+## Exception Handling
+- try
+- except
+- else
+- finally
+- Raising Exceptions
+- Handling Common Errors
+
+### Practice Programs
+- Safe Division
+- Integer Input Validation
+- Calculator
+- List Index Checker
+- Student Lookup
+
+---
+
+## Modules & Libraries
+- import
+- from ... import
+- math
+- random
+- statistics
+- sys
+- Custom Modules
+
+### Practice Programs
+- Cowsay
+- Number Guessing Game
+- Statistics Calculator
+- Command Line Arguments
+- Custom Module
+- Calculator
+
+---
+
+## API & JSON
+- requests
+- HTTP GET Requests
+- JSON Parsing
+- Working with APIs
+
+### Practice Programs
+- Song Search
+- Song Details
+- First Five Songs
+- Song Counter
+- No Results Search
+
+---
+
+## Unit Testing
+- assert
+- pytest
+- Writing Test Files
+- Testing Functions
+- Organizing Tests
+
+### Practice Programs
+- Even Number Checker
+- Largest Number
+- Greeting Function
+- Division Function
+- Grade Calculator
+
+---
+
 # 🚀 Coming Soon
 
-- Tuples
-- Sets
-- Modules & Libraries
 - File Handling
-- Object-Oriented Programming
-- Exception Handling
+- Object-Oriented Programming (OOP)
+- File I/O
+- Regular Expressions
 - Data Structures & Algorithms
-- Projects
+- Mini Projects
+- Final Python Projects
 
 ---
 
@@ -132,6 +230,8 @@ More folders and projects will be added as I continue my learning journey.
 - Visual Studio Code
 - Git
 - GitHub
+- pytest
+- requests
 
 ---
 
