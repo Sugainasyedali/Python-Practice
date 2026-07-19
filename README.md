@@ -2,19 +2,22 @@
 
 Welcome to my Python learning repository!
 
-This repository documents my journey of learning Python through daily coding practice, mini projects, and problem-solving exercises.
+This repository documents my journey of learning Python from the fundamentals to advanced concepts through daily practice, coding challenges, mini projects, and hands-on exercises.
+
+My goal is to build a strong foundation in Python before moving on to Full Stack Development, Data Structures & Algorithms, Artificial Intelligence, and Blockchain Development.
 
 ---
 
-# 📚 Progress
+# 📅 Learning Progress
 
-| Day | Topics | Status |
-|------|--------|--------|
+| Day | Topics Covered | Status |
+|------|----------------|--------|
 | ✅ Day 1 | Python Basics | Completed |
 | ✅ Day 2 | Control Flow & Loops | Completed |
 | ✅ Day 3 | Lists & Dictionaries | Completed |
 | ✅ Day 4 | Tuples & Sets | Completed |
-| ✅ Day 5 | Exceptions, Modules & Libraries, API & JSON, Unit Testing | Completed |
+| ✅ Day 5 | Exceptions, Modules, APIs, JSON & Unit Testing | Completed |
+| ✅ Day 6 | File I/O & CSV Handling | Completed |
 
 ---
 
@@ -32,27 +35,26 @@ Python-Practice
 ├── Sets
 ├── Exceptions
 ├── Modules_and_Libraries
-├── _API_and_JSON
+├── API_and_JSON
 ├── Unit_Testing
+├── FileIO
 └── README.md
 ```
 
-More folders and projects will be added as I continue my learning journey.
-
 ---
 
-# 💻 Topics Covered
+# 📚 Topics Covered
 
-## Python Basics
+## 🟢 Python Basics
 - Variables
 - Data Types
-- Type Conversion
 - Input & Output
 - Operators
+- Type Conversion
 
 ---
 
-## Control Flow
+## 🟡 Control Flow
 - if
 - if-else
 - elif
@@ -60,7 +62,7 @@ More folders and projects will be added as I continue my learning journey.
 
 ---
 
-## Loops
+## 🔵 Loops
 - for loop
 - while loop
 - break
@@ -70,18 +72,19 @@ More folders and projects will be added as I continue my learning journey.
 
 ---
 
-## Functions
+## 🟣 Functions
 - Function Definition
-- Parameters & Arguments
+- Parameters
+- Arguments
 - Return Values
 - Scope
-- Default Parameters
-- Variable-Length Arguments (`*args`)
-- Keyword Variable-Length Arguments (`**kwargs`)
+- Default Arguments
+- *args
+- **kwargs
 
 ---
 
-## Lists
+## 🟠 Lists
 
 ### Concepts
 - Creating Lists
@@ -99,24 +102,23 @@ More folders and projects will be added as I continue my learning journey.
 ### Practice Programs
 - Student Marks Analyzer
 - Shopping Cart
-- Second Largest Element
-- Remove Duplicates
 - Student Record System
+- Remove Duplicates
+- Second Largest Element
 
 ---
 
-## Dictionaries
+## 🔴 Dictionaries
 
 ### Concepts
 - Creating Dictionaries
-- Accessing Values
 - Updating Values
-- Adding New Key-Value Pairs
+- Adding New Items
 - Dictionary Methods
 - Looping Through Dictionaries
 
 ### Practice Programs
-- Student Record System
+- Student Database
 - Phone Book
 - Inventory Management
 - Word Dictionary
@@ -124,20 +126,18 @@ More folders and projects will be added as I continue my learning journey.
 
 ---
 
-## Tuples
-- Creating Tuples
+## 🟢 Tuples
+- Packing
+- Unpacking
 - Indexing
 - Slicing
-- Packing & Unpacking
 - Tuple Methods
 
 ---
 
-## Sets
+## 🟡 Sets
 - Creating Sets
-- Adding Elements
-- Removing Elements
-- Set Operations
+- Add & Remove Elements
 - Union
 - Intersection
 - Difference
@@ -145,24 +145,27 @@ More folders and projects will be added as I continue my learning journey.
 
 ---
 
-## Exception Handling
+## 🔵 Exception Handling
+
+### Concepts
 - try
 - except
 - else
 - finally
-- Raising Exceptions
-- Handling Common Errors
+- raise
 
 ### Practice Programs
 - Safe Division
-- Integer Input Validation
 - Calculator
-- List Index Checker
 - Student Lookup
+- Integer Validation
+- List Index Checker
 
 ---
 
-## Modules & Libraries
+## 🟣 Modules & Libraries
+
+### Concepts
 - import
 - from ... import
 - math
@@ -173,34 +176,37 @@ More folders and projects will be added as I continue my learning journey.
 
 ### Practice Programs
 - Cowsay
-- Number Guessing Game
+- Guess the Number
 - Statistics Calculator
 - Command Line Arguments
-- Custom Module
 - Calculator
 
 ---
 
-## API & JSON
-- requests
-- HTTP GET Requests
+## 🟠 API & JSON
+
+### Concepts
+- HTTP Requests
+- GET Request
 - JSON Parsing
-- Working with APIs
+- REST APIs
+- requests Library
 
 ### Practice Programs
 - Song Search
 - Song Details
 - First Five Songs
 - Song Counter
-- No Results Search
+- No Result Search
 
 ---
 
-## Unit Testing
+## 🔴 Unit Testing
+
+### Concepts
 - assert
 - pytest
-- Writing Test Files
-- Testing Functions
+- Test Functions
 - Organizing Tests
 
 ### Practice Programs
@@ -212,19 +218,38 @@ More folders and projects will be added as I continue my learning journey.
 
 ---
 
-# 🚀 Coming Soon
+# 📁 File I/O
 
-- File Handling
-- Object-Oriented Programming (OOP)
-- File I/O
-- Regular Expressions
-- Data Structures & Algorithms
-- Mini Projects
-- Final Python Projects
+### Concepts Learned
+- Reading Text Files
+- Writing Text Files
+- File Modes (r, w, a)
+- with open()
+- read()
+- readlines()
+- split()
+- CSV Reader
+- CSV DictReader
+- CSV Writer
+- DictWriter
+- Binary Files
+- Pillow (PIL)
+- Image Processing
+- Creating GIFs
+- Command Line Arguments (`sys.argv`)
+
+### Practice Problems
+- Student Notes Reader
+- Word Counter
+- Student CSV Reader
+- Highest CGPA Finder
+- Add Student to CSV
+- Department Search
+- CSV to Report
 
 ---
 
-# 🛠️ Tools Used
+# 🛠️ Tools & Technologies
 
 - Python 3
 - Visual Studio Code
@@ -232,7 +257,38 @@ More folders and projects will be added as I continue my learning journey.
 - GitHub
 - pytest
 - requests
+- csv
+- Pillow (PIL)
 
 ---
 
-⭐ This repository is continuously updated as I learn and build new Python projects.
+# 🎯 Learning Goals
+
+- Master Python Fundamentals
+- Build Strong Problem Solving Skills
+- Learn Object-Oriented Programming
+- Practice Data Structures & Algorithms
+- Build Real-World Python Projects
+- Prepare for Technical Interviews
+
+---
+
+# 🚀 Coming Next
+
+- 🔜 Regular Expressions (Regex)
+- 🔜 Object-Oriented Programming (OOP)
+- 🔜 Iterators & Generators
+- 🔜 Decorators
+- 🔜 File Compression
+- 🔜 SQLite
+- 🔜 Multithreading
+- 🔜 Mini Python Projects
+- 🔜 Advanced Python Projects
+
+---
+
+## ⭐ Progress Never Stops
+
+This repository is updated every day as I continue learning Python through consistent practice, projects, and problem-solving.
+
+**"Small progress every day leads to big results."** 🚀
