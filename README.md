@@ -18,12 +18,13 @@ My goal is to build a strong foundation in Python before moving on to Full Stack
 | ✅ Day 4 | Tuples & Sets | Completed |
 | ✅ Day 5 | Exceptions, Modules, APIs, JSON & Unit Testing | Completed |
 | ✅ Day 6 | File I/O & CSV Handling | Completed |
+| ✅ Day 7 | Regular Expressions (Regex) | Completed |
 
 ---
 
 # 📂 Repository Structure
 
-```
+```text
 Python-Practice
 │
 ├── Basics
@@ -38,6 +39,7 @@ Python-Practice
 ├── API_and_JSON
 ├── Unit_Testing
 ├── FileIO
+├── Regular_Expressions
 └── README.md
 ```
 
@@ -223,11 +225,11 @@ Python-Practice
 ### Concepts Learned
 - Reading Text Files
 - Writing Text Files
-- File Modes (r, w, a)
-- with open()
-- read()
-- readlines()
-- split()
+- File Modes (`r`, `w`, `a`)
+- `with open()`
+- `read()`
+- `readlines()`
+- `split()`
 - CSV Reader
 - CSV DictReader
 - CSV Writer
@@ -238,7 +240,7 @@ Python-Practice
 - Creating GIFs
 - Command Line Arguments (`sys.argv`)
 
-### Practice Problems
+### Practice Programs
 - Student Notes Reader
 - Word Counter
 - Student CSV Reader
@@ -246,6 +248,46 @@ Python-Practice
 - Add Student to CSV
 - Department Search
 - CSV to Report
+
+---
+
+# 🔍 Regular Expressions (Regex)
+
+### Concepts Learned
+
+- Introduction to Regular Expressions
+- `re.search()`
+- `re.match()`
+- `re.fullmatch()`
+- `re.findall()`
+- `re.split()`
+- `re.sub()`
+- Character Classes (`[]`)
+- Negated Character Classes (`[^ ]`)
+- Character Ranges (`a-z`, `A-Z`, `0-9`)
+- Special Sequences (`\d`, `\D`, `\w`, `\W`, `\s`, `\S`)
+- Quantifiers (`*`, `+`, `?`, `{m}`, `{m,n}`)
+- Anchors (`^`, `$`)
+- Grouping `()`
+- Capturing Groups
+- Non-Capturing Groups `(?:...)`
+- Optional Groups
+- Regex Flags
+  - `re.IGNORECASE`
+  - `re.MULTILINE`
+  - `re.DOTALL`
+- Pattern Matching
+- Data Validation
+- Data Extraction
+- Data Cleaning
+
+### Practice Programs
+
+- Number Extractor
+- Email Validator
+- Name Parser
+- Phone Number Masker
+- Text Splitter
 
 ---
 
@@ -259,15 +301,33 @@ Python-Practice
 - requests
 - csv
 - Pillow (PIL)
+- Regular Expressions (`re`)
+
+---
+
+# 💡 Skills Gained
+
+- Python Programming Fundamentals
+- Problem Solving
+- Debugging
+- File Handling
+- CSV Processing
+- API Integration
+- Unit Testing
+- Pattern Matching with Regular Expressions
+- Data Validation
+- Data Extraction
+- Clean Code Practices
+- Git & GitHub Workflow
 
 ---
 
 # 🎯 Learning Goals
 
 - Master Python Fundamentals
-- Build Strong Problem Solving Skills
-- Learn Object-Oriented Programming
-- Practice Data Structures & Algorithms
+- Strengthen Problem Solving Skills
+- Master Object-Oriented Programming
+- Learn Data Structures & Algorithms
 - Build Real-World Python Projects
 - Prepare for Technical Interviews
 
@@ -275,7 +335,6 @@ Python-Practice
 
 # 🚀 Coming Next
 
-- 🔜 Regular Expressions (Regex)
 - 🔜 Object-Oriented Programming (OOP)
 - 🔜 Iterators & Generators
 - 🔜 Decorators
@@ -289,6 +348,6 @@ Python-Practice
 
 ## ⭐ Progress Never Stops
 
-This repository is updated every day as I continue learning Python through consistent practice, projects, and problem-solving.
+This repository is updated regularly as I continue learning Python through consistent practice, projects, and problem-solving.
 
-**"Small progress every day leads to big results."** 🚀
+> **"Small progress every day leads to big results."** 🚀
