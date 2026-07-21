@@ -1,0 +1,56 @@
+class Student:
+    def __init__(self,name,age,dept,cgpa):
+        self.name =name
+        self.age = age
+        self.dept = dept
+        self.cgpa = cgpa
+    @property
+    def name(self):
+     return self._name
+    @name.setter
+    def name(self,name):
+        if not name.strip():
+            raise ValueError("Invalid name")
+        self._name = name
+    @property
+    def age(self):
+       return self._age
+    @age.setter
+    def age(self,age):
+        if age < 17 or age > 30:
+         raise ValueError("Age must be between 17 and 30")
+        self._age = age 
+    @property
+    def dept(self):
+     return self._dept
+    @dept.setter
+    def dept(self,dept):
+       if not dept.strip():
+            raise ValueError("Invalid name")
+       self._dept = dept
+    @property
+    def cgpa(self):
+     return self._cgpa
+    @cgpa.setter
+    def cgpa(self,cgpa):
+       if cgpa<0 or cgpa>10:
+            raise ValueError("CGPA must be between 0 and 10")
+       self._cgpa = cgpa
+    def display_details(self):
+     print("______Student Details______")
+     print("Name       :",self.name)
+     print("Age        :",self.age)
+     print("Department :",self.dept)
+     print("CGPA       :",self.cgpa)
+
+    def check_placement(self):
+      if self.cgpa >= 7.5:
+          return "Eligible for Placement"
+      else:
+          return "Not Eligible for Placement"
+      
+
+student1 = Student("Sugaina", 20, "AI & DS", 9.8)
+student1.display_details()
+if student1.check_placement() == "Eligible for Placement":
+    print("Send interview email")
