@@ -1,56 +1,206 @@
 class Student:
-    def __init__(self,name,age,dept,cgpa):
-        self.name =name
+    def __init__(self, name, age, dept, cgpa):
+        self.name = name
         self.age = age
         self.dept = dept
         self.cgpa = cgpa
+
     @property
     def name(self):
-     return self._name
+        return self._name
+
     @name.setter
-    def name(self,name):
+    def name(self, name):
         if not name.strip():
             raise ValueError("Invalid name")
         self._name = name
+
     @property
     def age(self):
-       return self._age
+        return self._age
+
     @age.setter
-    def age(self,age):
+    def age(self, age):
         if age < 17 or age > 30:
-         raise ValueError("Age must be between 17 and 30")
-        self._age = age 
+            raise ValueError("Age must be between 17 and 30")
+        self._age = age
+
     @property
     def dept(self):
-     return self._dept
+        return self._dept
+
     @dept.setter
-    def dept(self,dept):
-       if not dept.strip():
-            raise ValueError("Invalid name")
-       self._dept = dept
+    def dept(self, dept):
+        if not dept.strip():
+            raise ValueError("Invalid Department")
+        self._dept = dept
+
     @property
     def cgpa(self):
-     return self._cgpa
+        return self._cgpa
+
     @cgpa.setter
-    def cgpa(self,cgpa):
-       if cgpa<0 or cgpa>10:
+    def cgpa(self, cgpa):
+        if cgpa < 0 or cgpa > 10:
             raise ValueError("CGPA must be between 0 and 10")
-       self._cgpa = cgpa
-    def display_details(self):
-     print("______Student Details______")
-     print("Name       :",self.name)
-     print("Age        :",self.age)
-     print("Department :",self.dept)
-     print("CGPA       :",self.cgpa)
+        self._cgpa = cgpa
+
+    def displaydetails(self):
+        print("\n------ Student Details ------")
+        print("Name       :", self.name)
+        print("Age        :", self.age)
+        print("Department :", self.dept)
+        print("CGPA       :", self.cgpa)
 
     def check_placement(self):
-      if self.cgpa >= 7.5:
-          return "Eligible for Placement"
-      else:
-          return "Not Eligible for Placement"
-      
+        return self.cgpa >= 7.5
 
-student1 = Student("Sugaina", 20, "AI & DS", 9.8)
-student1.display_details()
-if student1.check_placement() == "Eligible for Placement":
-    print("Send interview email")
+
+students = []
+
+
+class StudentManagement:
+
+    @staticmethod
+    def addDetails():
+        try:
+            name = input("Enter Name : ")
+            age = int(input("Enter Age : "))
+            dept = input("Enter Department : ")
+            cgpa = float(input("Enter CGPA : "))
+
+            student = Student(name, age, dept, cgpa)
+            students.append(student)
+
+            print("Student Added Successfully!")
+
+        except ValueError as e:
+            print(e)
+
+    @staticmethod
+    def display_details():
+        if len(students) == 0:
+            print("No Students Found")
+            return
+
+        for student in students:
+            student.displaydetails()
+
+    @staticmethod
+    def search():
+        name = input("Enter Student Name : ")
+        found = False
+
+        for student in students:
+            if student.name.lower() == name.lower():
+                student.displaydetails()
+                found = True
+                break
+
+        if not found:
+            print("Student Not Found")
+
+    @staticmethod
+    def update():
+        name = input("Enter Student Name to Update : ")
+        found = False
+
+        for student in students:
+            if student.name.lower() == name.lower():
+
+                print("\nLeave blank if you don't want to change the value.")
+
+                new_name = input("New Name : ")
+                if new_name.strip():
+                    student.name = new_name
+
+                new_age = input("New Age : ")
+                if new_age.strip():
+                    student.age = int(new_age)
+
+                new_dept = input("New Department : ")
+                if new_dept.strip():
+                    student.dept = new_dept
+
+                new_cgpa = input("New CGPA : ")
+                if new_cgpa.strip():
+                    student.cgpa = float(new_cgpa)
+
+                print("Student Updated Successfully!")
+                found = True
+                break
+
+        if not found:
+            print("Student Not Found")
+
+    @staticmethod
+    def delete():
+        name = input("Enter Student Name to Delete : ")
+        found = False
+
+        for student in students:
+            if student.name.lower() == name.lower():
+                students.remove(student)
+                print("Student Deleted Successfully!")
+                found = True
+                break
+
+        if not found:
+            print("Student Not Found")
+
+    @staticmethod
+    def placement():
+        found = False
+
+        print("\n------ Placement Eligible Students ------")
+
+        for student in students:
+            if student.check_placement():
+                student.displaydetails()
+                found = True
+
+        if not found:
+            print("No Eligible Students")
+
+
+while True:
+
+    print("\n===== Student Management System =====")
+    print("1. Add Student")
+    print("2. Display All Students")
+    print("3. Search Student")
+    print("4. Update Student")
+    print("5. Delete Student")
+    print("6. Placement Eligible Students")
+    print("7. Exit")
+
+    try:
+        choice = int(input("Enter Choice : "))
+
+        if choice == 1:
+            StudentManagement.addDetails()
+
+        elif choice == 2:
+            StudentManagement.display_details()
+
+        elif choice == 3:
+            StudentManagement.search()
+
+        elif choice == 4:
+            StudentManagement.update()
+
+        elif choice == 5:
+            StudentManagement.delete()
+
+        elif choice == 6:
+            StudentManagement.placement()
+
+        elif choice == 7:
+            print("Thank You!")
+            break
+
+        else:
+            print("Invalid Choice")
+
+    except ValueError:
+        print("Please Enter Numbers Only")
