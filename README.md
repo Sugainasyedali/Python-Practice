@@ -4,7 +4,7 @@ Welcome to my Python learning repository!
 
 This repository documents my journey of learning Python from the fundamentals to advanced concepts through daily practice, coding challenges, mini projects, and hands-on exercises.
 
-My goal is to build a strong foundation in Python before moving on to Full Stack Development, Data Structures & Algorithms, Artificial Intelligence, and Blockchain Development.
+My goal is to build a strong foundation in Python before moving on to Machine Learning, Artificial Intelligence, Data Structures & Algorithms, and advanced AI development.
 
 ---
 
@@ -19,6 +19,7 @@ My goal is to build a strong foundation in Python before moving on to Full Stack
 | ✅ Day 5 | Exceptions, Modules, APIs, JSON & Unit Testing | Completed |
 | ✅ Day 6 | File I/O & CSV Handling | Completed |
 | ✅ Day 7 | Regular Expressions (Regex) | Completed |
+| ✅ Day 8 | Object-Oriented Programming (Classes, Objects, Constructors, Methods, Encapsulation) | Learning in Progress |
 
 ---
 
@@ -40,6 +41,9 @@ Python-Practice
 ├── Unit_Testing
 ├── FileIO
 ├── Regular_Expressions
+├── OOP
+│   ├── StudentManagementSystem
+│   └── PracticePrograms
 └── README.md
 ```
 
@@ -48,6 +52,7 @@ Python-Practice
 # 📚 Topics Covered
 
 ## 🟢 Python Basics
+
 - Variables
 - Data Types
 - Input & Output
@@ -57,6 +62,7 @@ Python-Practice
 ---
 
 ## 🟡 Control Flow
+
 - if
 - if-else
 - elif
@@ -65,6 +71,7 @@ Python-Practice
 ---
 
 ## 🔵 Loops
+
 - for loop
 - while loop
 - break
@@ -75,6 +82,7 @@ Python-Practice
 ---
 
 ## 🟣 Functions
+
 - Function Definition
 - Parameters
 - Arguments
@@ -89,6 +97,7 @@ Python-Practice
 ## 🟠 Lists
 
 ### Concepts
+
 - Creating Lists
 - Indexing
 - Slicing
@@ -102,6 +111,7 @@ Python-Practice
 - len()
 
 ### Practice Programs
+
 - Student Marks Analyzer
 - Shopping Cart
 - Student Record System
@@ -113,6 +123,7 @@ Python-Practice
 ## 🔴 Dictionaries
 
 ### Concepts
+
 - Creating Dictionaries
 - Updating Values
 - Adding New Items
@@ -120,6 +131,7 @@ Python-Practice
 - Looping Through Dictionaries
 
 ### Practice Programs
+
 - Student Database
 - Phone Book
 - Inventory Management
@@ -129,6 +141,7 @@ Python-Practice
 ---
 
 ## 🟢 Tuples
+
 - Packing
 - Unpacking
 - Indexing
@@ -138,6 +151,7 @@ Python-Practice
 ---
 
 ## 🟡 Sets
+
 - Creating Sets
 - Add & Remove Elements
 - Union
@@ -150,6 +164,7 @@ Python-Practice
 ## 🔵 Exception Handling
 
 ### Concepts
+
 - try
 - except
 - else
@@ -157,6 +172,7 @@ Python-Practice
 - raise
 
 ### Practice Programs
+
 - Safe Division
 - Calculator
 - Student Lookup
@@ -168,6 +184,7 @@ Python-Practice
 ## 🟣 Modules & Libraries
 
 ### Concepts
+
 - import
 - from ... import
 - math
@@ -177,6 +194,7 @@ Python-Practice
 - Custom Modules
 
 ### Practice Programs
+
 - Cowsay
 - Guess the Number
 - Statistics Calculator
@@ -188,6 +206,7 @@ Python-Practice
 ## 🟠 API & JSON
 
 ### Concepts
+
 - HTTP Requests
 - GET Request
 - JSON Parsing
@@ -195,6 +214,7 @@ Python-Practice
 - requests Library
 
 ### Practice Programs
+
 - Song Search
 - Song Details
 - First Five Songs
@@ -206,12 +226,14 @@ Python-Practice
 ## 🔴 Unit Testing
 
 ### Concepts
+
 - assert
 - pytest
 - Test Functions
 - Organizing Tests
 
 ### Practice Programs
+
 - Even Number Checker
 - Largest Number
 - Greeting Function
@@ -223,6 +245,7 @@ Python-Practice
 # 📁 File I/O
 
 ### Concepts Learned
+
 - Reading Text Files
 - Writing Text Files
 - File Modes (`r`, `w`, `a`)
@@ -241,6 +264,7 @@ Python-Practice
 - Command Line Arguments (`sys.argv`)
 
 ### Practice Programs
+
 - Student Notes Reader
 - Word Counter
 - Student CSV Reader
@@ -262,20 +286,15 @@ Python-Practice
 - `re.findall()`
 - `re.split()`
 - `re.sub()`
-- Character Classes (`[]`)
-- Negated Character Classes (`[^ ]`)
-- Character Ranges (`a-z`, `A-Z`, `0-9`)
-- Special Sequences (`\d`, `\D`, `\w`, `\W`, `\s`, `\S`)
-- Quantifiers (`*`, `+`, `?`, `{m}`, `{m,n}`)
-- Anchors (`^`, `$`)
-- Grouping `()`
+- Character Classes
+- Character Ranges
+- Special Sequences
+- Quantifiers
+- Anchors
+- Grouping
 - Capturing Groups
-- Non-Capturing Groups `(?:...)`
-- Optional Groups
+- Non-Capturing Groups
 - Regex Flags
-  - `re.IGNORECASE`
-  - `re.MULTILINE`
-  - `re.DOTALL`
 - Pattern Matching
 - Data Validation
 - Data Extraction
@@ -288,6 +307,29 @@ Python-Practice
 - Name Parser
 - Phone Number Masker
 - Text Splitter
+
+---
+
+# 🧠 Object-Oriented Programming (Day 8)
+
+### Concepts Learned
+
+- Classes
+- Objects
+- Attributes
+- Methods
+- Constructors (`__init__`)
+- Instance Variables
+- Object Creation
+- Encapsulation
+- `self`
+- Object Interaction
+
+### Current Practice
+
+- Student Management System (Learning Project)
+
+> **Note:** This project was initially completed with guidance to understand OOP concepts. The next implementation will be rebuilt independently to strengthen problem-solving and coding skills.
 
 ---
 
@@ -308,13 +350,14 @@ Python-Practice
 # 💡 Skills Gained
 
 - Python Programming Fundamentals
+- Object-Oriented Programming
 - Problem Solving
 - Debugging
 - File Handling
 - CSV Processing
 - API Integration
 - Unit Testing
-- Pattern Matching with Regular Expressions
+- Pattern Matching
 - Data Validation
 - Data Extraction
 - Clean Code Practices
@@ -325,24 +368,38 @@ Python-Practice
 # 🎯 Learning Goals
 
 - Master Python Fundamentals
-- Strengthen Problem Solving Skills
 - Master Object-Oriented Programming
+- Strengthen Problem Solving Skills
 - Learn Data Structures & Algorithms
 - Build Real-World Python Projects
 - Prepare for Technical Interviews
+- Build AI & Machine Learning Applications
 
 ---
 
 # 🚀 Coming Next
 
-- 🔜 Object-Oriented Programming (OOP)
 - 🔜 Iterators & Generators
 - 🔜 Decorators
 - 🔜 File Compression
 - 🔜 SQLite
 - 🔜 Multithreading
+- 🔜 NumPy
+- 🔜 Pandas
+- 🔜 Matplotlib
+- 🔜 Scikit-learn
 - 🔜 Mini Python Projects
 - 🔜 Advanced Python Projects
+
+---
+
+# 📈 Current Learning Journey
+
+I believe that becoming a good programmer is not about copying code but about understanding how to solve problems.
+
+From this point forward, I am rebuilding projects independently to strengthen my logical thinking, debugging skills, and confidence in Python.
+
+Every project in this repository represents another step toward becoming an AI Engineer.
 
 ---
 
